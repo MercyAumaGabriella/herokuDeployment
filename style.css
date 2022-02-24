@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dongle", sans-serif;
+
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h4 {
+  font-size: 28px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+p {
+  font-size: 28px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal{
+  font-size: 28px;
+  font-weight: 600 ;
+  padding: 10px 30px;
+  color: #7D2601;
+  background-color: #cf9982;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+button.white{
+  font-size: 20px;
+  font-weight: 600 ;
+  padding: 11px 20px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  border:2px solid #fff;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+body {
+  width: 100%;
+}
+
+/* Header */
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+#header {
+  /* Align in one row */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: -5px 80px 0px 80px;
+  background-color: #ffd9b7;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+
+  /* fixed navbar */
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  /* ALign in a row */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #fa7803;
+  font-size: 28px;
+
+  /* this is so that the hover color doesn't disappear fast */
+  transition: 0.4s ease-in-out; 
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #7D2601;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #7D2601;
+  position: absolute;
+  bottom: 6px;
+  left: 20px;
+}
+
+/* Home Page */
+#landmark{
+  background-image: url("/images/landmark_phonecover.png");
+  height: 90vh;
+  width: 100%;
+
+  /* Centering the landmark picture */
+  background-position: top 25% right 0;
+  background-size: cover;
+
+  /* Styling words in the center */
+  padding: 0px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#landmark h1{
+  color: #7D2601;
+}
+
+#landmark button{
+  background-image: url("/images/button_landmark.png");
+  background-size:cover;
+  background-color: transparent;
+  border: 0;
+  color: #7D2601;
+  width: 140px;
+  height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#landmark button:hover{
+  color: #fff;
+}
